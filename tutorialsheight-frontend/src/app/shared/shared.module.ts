@@ -1,3 +1,4 @@
+import { MaterialComponentsModule } from './material-components/material-components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -6,21 +7,19 @@ import { HeaderComponent } from './navigation/header/header.component';
 import { FooterComponent } from './navigation/footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
+const components = [
+  HeaderComponent,
+  FooterComponent,
+  PageNotFoundComponent
+]
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    FooterComponent,
-    PageNotFoundComponent
-  ],
+  declarations: components,
   imports: [
     CommonModule,
-    SharedRoutingModule
+    SharedRoutingModule,
+    MaterialComponentsModule
   ],
-  exports:[
-    HeaderComponent,
-    FooterComponent,
-    PageNotFoundComponent
-  ]
+  exports: components
 })
 export class SharedModule { }
