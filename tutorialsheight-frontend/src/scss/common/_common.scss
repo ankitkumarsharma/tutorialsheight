@@ -1,0 +1,22 @@
+//headings
+@import '../variables/variables';
+h1{
+    font-size: $h1_font_size;
+    font-weight: $font_weight_700;
+    margin: 1.6rem 0;
+    display: inline-block;
+    color: $h1_color;
+}
+h2{
+    font-size: $h2_font_size;
+    font-weight: $font_weight_500;
+    margin: 1.4rem 0;
+    display: inline-block;
+    color: $h2_color;
+}
+p{
+    font-size: $para_font_size;
+    font-weight: $font_weight_400;
+    margin: 1rem 0;
+    color: $para_color;
+}
