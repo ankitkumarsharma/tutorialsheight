@@ -1,0 +1,7 @@
+<nav>
+    <ul class="list-group list-group-horizontal">
+        <li class="list-group-item" *ngFor="let item of navbar">
+            <a [routerLink]="item.route" [routerLinkActive]="'active'">{{item.label}}</a>
+        </li>
+    </ul>
+</nav>
